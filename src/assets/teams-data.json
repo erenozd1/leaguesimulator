@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Fenerbahçe",
+        "code": "FB",
+        "played_games":0,
+        "won_games":0,
+        "lose_games":0,
+        "draw_games":0,
+        "average":0,
+        "point":0
+    },
+    {
+        "name": "Galatasaray",
+        "code": "GS",
+        "played_games":0,
+        "won_games":0,
+        "lose_games":0,
+        "draw_games":0,
+        "average":0,
+        "point":0
+    },
+    {
+        "name": "Beşiktaş",
+        "code": "BJK",
+        "played_games":0,
+        "won_games":0,
+        "lose_games":0,
+        "draw_games":0,
+        "average":0,
+        "point":0
+    },
+    {
+        "name": "Sivasspor",
+        "code": "SVS",
+        "played_games":0,
+        "won_games":0,
+        "lose_games":0,
+        "draw_games":0,
+        "average":0,
+        "point":0
+    }
+]
