@@ -1,42 +1,54 @@
 [
     {
+        "id": 1,
         "name": "Fenerbahçe",
         "code": "FB",
-        "played_games":0,
-        "won_games":0,
-        "lose_games":0,
-        "draw_games":0,
-        "average":0,
-        "point":0
+        "played_games": 0,
+        "won_games": 0,
+        "lose_games": 0,
+        "draw_games": 0,
+        "average": 0,
+        "point": 0,
+        "goal_scored":0,
+        "goal_conceded":0
     },
     {
+        "id": 2,
         "name": "Galatasaray",
         "code": "GS",
-        "played_games":0,
-        "won_games":0,
-        "lose_games":0,
-        "draw_games":0,
-        "average":0,
-        "point":0
+        "played_games": 0,
+        "won_games": 0,
+        "lose_games": 0,
+        "draw_games": 0,
+        "average": 0,
+        "point": 0,
+        "goal_scored":0,
+        "goal_conceded":0
     },
     {
+        "id": 3,
         "name": "Beşiktaş",
         "code": "BJK",
-        "played_games":0,
-        "won_games":0,
-        "lose_games":0,
-        "draw_games":0,
-        "average":0,
-        "point":0
+        "played_games": 0,
+        "won_games": 0,
+        "lose_games": 0,
+        "draw_games": 0,
+        "average": 0,
+        "point": 0,
+        "goal_scored":0,
+        "goal_conceded":0
     },
     {
+        "id": 4,
         "name": "Sivasspor",
         "code": "SVS",
-        "played_games":0,
-        "won_games":0,
-        "lose_games":0,
-        "draw_games":0,
-        "average":0,
-        "point":0
+        "played_games": 0,
+        "won_games": 0,
+        "lose_games": 0,
+        "draw_games": 0,
+        "average": 0,
+        "point": 0,
+        "goal_scored":0,
+        "goal_conceded":0
     }
 ]

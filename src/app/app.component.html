@@ -1,167 +1,85 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
- 
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    .card-container>*:not(.circle-link),
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
-</style>
 <div class="toolbar" role="banner">
   <img width="120" alt="Spor Toto Logo" src="../assets/logo/spor-toto-super-lig-yatay.png" />
   <div class="spacer"></div>
 </div>
-<div class="content" role="main" style="flex-direction:inherit;">
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th class="text-center" colspan="7">Puan Durumu</th>
-      </tr>
-      <tr>
-        <th>Takımlar</th>
-        <th>P</th>
-        <th>O</th>
-        <th>G</th>
-        <th>B</th>
-        <th>M</th>
-        <th>Av.</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let t of teams">
-        <td>{{t.name}}</td>
-        <td>{{t.point}}</td>
-        <td>{{t.played_games}}</td>
-        <td>{{t.won_games}}</td>
-        <td>{{t.draw_games}}</td>
-        <td>{{t.lose_games}}</td>
-        <td>{{t.average}}</td>
-      </tr>
-    </tbody>
-  </table>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th class="text-center">STS 4. Hafta Maç Sonuçları</th>
-      </tr>
-      <tr>
-        <th>STS Maç S</th>
-      </tr>
-    </thead>
-    <tbody>
-      <ng-container *ngFor="let match of matches">
-        <tr *ngFor="let m of match.matches">
-          <td>{{m.homeName}} vs {{m.awayName}}</td>
+<div class="content" role="main">
+  <div class="flex w-full">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center" colspan="9">Puan Durumu</th>
         </tr>
         <tr>
-          <td><br></td>
+          <th>Takımlar</th>
+          <th>P</th>
+          <th>O</th>
+          <th>G</th>
+          <th>B</th>
+          <th>M</th>
+          <th>AG</th>
+          <th>YG</th>
+          <th>Av.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of teams">
+          <td>{{t.name}}</td>
+          <td>{{t.point}}</td>
+          <td>{{t.played_games}}</td>
+          <td>{{t.won_games}}</td>
+          <td>{{t.draw_games}}</td>
+          <td>{{t.lose_games}}</td>
+          <td>{{t.goal_scored}}</td>
+          <td>{{t.goal_conceded}}</td>
+          <td>{{t.average}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center">STS {{week}}. Hafta Maç Sonuçları</th>
         </tr>
         <tr>
-          <td><br></td>
+          <th>Maç Sonuçları</th>
         </tr>
-      </ng-container>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let match of matches">
+          <tr *ngFor="let m of match.matches">
+            <td>{{m.homeName}} {{m.homeScore}} - {{m.awayScore}} {{m.awayName}}</td>
+          </tr>
+          <tr>
+            <td><br></td>
+          </tr>
+          <tr>
+            <td><br></td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    <table class="table table-striped">
+      <thead>
+
+        <th colspan="2">
+          Şampiyonluk Tahminleri
+        </th>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of prediction">
+          <td>{{t.name}}</td>
+          <td>%{{t.possibility}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="champion">🏆 ŞAMPİYON {{champion}}</div>
+  <div class="flex">
+
+    <button class="btn btn-warning" *ngIf="week !== 6" (click)="playAllMatches()"> Tüm ligi oynat</button>
+    <button class="btn btn-primary ml-5" *ngIf="week !== 6" (click)="nextWeek()">Sonraki Hafta </button>
+    <button class="btn btn-success ml-5" *ngIf="week == 6 && !champion" (click)="endLeague()">Ligi Bitir </button>
+  </div>
 </div>
 <router-outlet></router-outlet>

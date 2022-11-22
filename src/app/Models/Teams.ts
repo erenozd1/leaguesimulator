@@ -8,7 +8,9 @@ export class teamsModel {
     lose_games:number;
     draw_games:number;
     average:number;
-    constructor(id:number, name: string, code: string,point:number,played_games:number,won_games:number,lose_games:number,draw_games:number,average:number) {
+    goal_scored:number;
+    goal_conceded:number;
+    constructor(id:number, name: string, code: string,point:number,played_games:number,won_games:number,lose_games:number,draw_games:number,average:number,goal_scored:number,goal_conceded:number) {
         this.id = id;
         this.name = name;
         this.code = code;
@@ -18,5 +20,7 @@ export class teamsModel {
         this.average = average;
         this.won_games = won_games;
         this.draw_games = draw_games;
+        this.goal_conceded = goal_conceded;
+        this.goal_scored = goal_scored;
     }
 }
