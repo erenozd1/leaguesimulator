@@ -1,0 +1,104 @@
+[
+    {
+        "week": 1,
+        "matches": [
+            {
+                "home": 1,
+                "homeName": "Fenerbahçe",
+                "away": 2,
+                "awayName": "Galatasaray"
+            },
+            {
+                "home": 3,
+                "homeName": "Beşiktaş",
+                "away": 4,
+                "awayName": "Sivasspor"
+            }
+        ]
+    },
+    {
+        "week": 2,
+        "matches": [
+            {
+                "home": 1,
+                "homeName": "Fenerbahçe",
+                "away": 3,
+                "awayName": "Beşiktaş"
+            },
+            {
+                "home": 2,
+                "homeName": "Galatasaray",
+                "away": 4,
+                "awayName": "Sivasspor"
+            }
+        ]
+    },
+    {
+        "week": 3,
+        "matches": [
+            {
+                "home": 1,
+                "homeName": "Fenerbahçe",
+                "away": 4,
+                "awayName": "Sivasspor"
+            },
+            {
+                "home": 2,
+                "homeName": "Galatasaray",
+                "away": 3,
+                "awayName": "Beşiktaş"
+            }
+        ]
+    },
+    {
+        "week": 4,
+        "matches": [
+            {
+                "home": 2,
+                "homeName": "Galatasaray",
+                "away": 1,
+                "awayName": "Fenerbahçe"
+            },
+            {
+                "home": 4,
+                "homeName": "Sivasspor",
+                "away": 3,
+                "awayName": "Beşiktaş"
+            }
+        ]
+    },
+    {
+        "week": 5,
+        "matches": [
+            {
+                "home": 3,
+                "homeName": "Beşiktaş",
+                "away": 1,
+                "awayName": "Fenerbahçe"
+            },
+            {
+                "home": 4,
+                "homeName": "Sivasspor",
+                "away": 2,
+                "awayName": "Galatasaray"
+            }
+        ]
+    },
+    {
+        "week": 6,
+        "matches": [
+            {
+                "home": 4,
+                "homeName": "Sivasspor",
+                "away": 1,
+                "awayName": "Fenerbahçe"
+            },
+            {
+                "home": 3,
+                "homeName": "Beşiktaş",
+                "away": 2,
+                "awayName": "Galatasaray"
+            }
+        ]
+    }
+]
